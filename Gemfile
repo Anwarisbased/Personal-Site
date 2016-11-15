@@ -9,6 +9,7 @@ gem 'turbolinks', '~> 5'
 gem 'jbuilder', '~> 2.5'
 gem 'pygments.rb', '~> 0.6.0'
 gem 'redcarpet', '~>3.2.2'
+gem 'friendly_id', '~> 5.1'
 group :development, :test do
   gem 'byebug', platform: :mri
 end
