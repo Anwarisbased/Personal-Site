@@ -1,0 +1,27 @@
+<div class="wrapper wrapper_padding clearfix">
+  <div class="col-1 homepage_content about">
+    <h2>About</h2>
+      <hr>
+        <p>I'm a 25 year old aspiring Ruby On Rails Developer living in Los Angeles, California.</p>
+        <p>I created this blog as a way of attempting to crystalize newfound knowledge through writing and a way of showcasing stuff i've built. I'm also unable to pass up an excuse to type $rails new. 👽🔬🔭 </p>
+        <p>If you'd like to work together in any capacity please feel free to reach out. View the pictures I take on <a href="https://instagram.com/dummycaketho/" target="_blank">Instagram</a>, &amp; see the code I write on <a href="https://github.com/Anwarisbased target="_blank"">Github</a>!</p>
+  </div>
+  <div class="col-2 homepage_content">
+    <h2>Stuff I've Written</h2>
+    <hr>
+    <% @posts.each do |post| %>
+        <h3><a href="#"><%= link_to post.title, post %></a></h3>
+        <p class="date"><%= post.created_at.strftime("%A, %b %d") %></p>
+    <% end %>
+  </div>
+  <div class="col-3 homepage_content">
+    <h2>Stuff I've Built</h2>
+    <hr>
+    <h3><a href="#">The DO lists</a></h3>
+    <p class="date">Friday April 10th</p>
+    <h3><a href="#">The DO lists</a></h3>
+    <p class="date">Friday April 10th</p>
+    <h3><a href="#">The DO lists</a></h3>
+    <p class="date">Friday April 10th</p>
+  </div>
+</div>

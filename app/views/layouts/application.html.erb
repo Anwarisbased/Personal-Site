@@ -11,7 +11,7 @@
 
   <body>
     <header id="main_navigation" class="clearfix">
-      <a href="#" class="name">Anwar Khan</a>
+      <%= link_to "Anwar Khan", root_path, class: "name" %>
       <nav>
         <%= link_to "Articles", posts_path %>
         <a href="#">Projects</a>
@@ -19,8 +19,16 @@
       </nav>
     </header>
 
+      <%= yield %>
 
-<%= yield %>
+    <footer id="main_footer">
+      <p class="copyright">&copy;2016 Anwar Khan</p>
+      <nav>
+        <a href="https://github.com/Anwarisbased" target="_blank"><i class="fa fa-github-alt"></i></a>
+        <a href="https://instagram.com/dummycaketho/" target="_blank"><i class="fa fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/anwarwkhan" target="_blank"><i class="fa fa-linkedin-square"></i></a>
+      </nav>
+    </footer>
 
   </body>
 </html>
